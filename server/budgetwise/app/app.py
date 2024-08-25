@@ -44,5 +44,5 @@ class BudgetWiseLLM:
     # - Others: $400
     # """
     def generate_response(self, question):
-        response = self.agent().invoke({"query": question})
+        response = self.init_agent().invoke({"query": question})
         return response

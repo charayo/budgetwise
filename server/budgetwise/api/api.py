@@ -41,7 +41,7 @@ router = APIRouter(prefix="/budgetwise/v1")
 @router.post(path="/analyze")
 def ask_question(request: types.ChatRequestModel,):
     ask_ai = myapp.BudgetWiseLLM()
-    response = ask_ai.generate_response(request.question) 
+    response = ask_ai.generate_response(request.message) 
     return {"response": response}
 
 
