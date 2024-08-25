@@ -16,8 +16,6 @@ import server.budgetwise.app.app as myapp
 
 not_implemented = HTTPException(status_code=500, detail="Not Implemented")
 
-
-
 app = FastAPI()
 
 app.add_middleware(

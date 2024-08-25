@@ -2,7 +2,6 @@ import os
 from getpass import getpass
 from langchain_ibm import WatsonxLLM
 from langchain_core.prompts import PromptTemplate
-from langchain.chains import LLMChain
 
 
 class BudgetWiseLLM:
