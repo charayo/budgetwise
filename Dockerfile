@@ -16,6 +16,11 @@ COPY requirements.txt /app/
 
 
 # COPY . .
+RUN pip install langchain
+RUN pip install langchain
+RUN pip install langchain_ibm
+RUN pip install langchain_core
+RUN pip install fastapi
 
 RUN pip install -r requirements.txt
 
